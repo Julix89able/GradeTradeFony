@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>{% block title %}GradeTrader!{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="details.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% block stylesheets %} {% endblock %}
+
+
+
+</head>
+
+<body>
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </form>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-education" aria-hidden="true">
+                        </span> GradeTrader</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <a class="navbar-brand" href="/gt/play"><span class="glyphicon glyphicon-knight" aria-hidden="true"></span>Spielen</a>
+                        <a class="navbar-brand" href="/gt/login/2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Profil</a>
+                        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span>Statistik</a>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+    </div>
+    <header>
+
+            {% block body %}{% endblock %}
+
+
+
+
+    </header>
+
+    </div>
+
+
+
+    </div>
+{% block javascripts %}{% endblock %}
+</body>
+</html>
