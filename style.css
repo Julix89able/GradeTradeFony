@@ -1,0 +1,28 @@
+body {
+	background-color: gray;
+
+}
+.container{
+	margin-top:100px;
+}
+.well li {
+	padding-left:10px;
+}
+
+.well a {
+	padding-left:10px;
+}
+
+ul {
+	list-style-type: none;
+
+}
+
+.below{
+	background-color: white;
+	min-height: 400px;
+}
+
+.below h3{
+	margin:10px;
+}
